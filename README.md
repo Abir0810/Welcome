@@ -42,7 +42,7 @@ Hello!! This is Abir Abdullha. I have a couple of years of experience in data sc
 - Graphics design, data entry, surveys, data collection, Machine learning different types of projects are involved where many employees get their chance to work and get payment daily.
 - Managed a large number of people and developed a platform where they could earn their skills.
 
-**Founder of Get_project (_2021 - present_)**
+**Founder of Get_project (_2022 - present_)**
 - Work on AI technologies, Working on NLP, ML and Data Science projects.
 - Research on AI, NLP, ML and Data Science projects, a proper guide to publications of any type of research work.
 - Web development projects, AI projects, and Customer service projects.
