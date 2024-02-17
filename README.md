@@ -17,19 +17,19 @@ Hello!! This is Abir Abdullha. I have a couple of years of experience in data sc
 - I have developed two deep learning models for customer service team and one machine learning model for project management.
 
 **Artificial Intelleigence Instructor at Microland IT solutions LTD. (_July 2022 - December 2022_)**
-- Preparing classes and notes regarding AI, researching one new technology on AI.
-- Working on AI projects, and taking classes to learn about new technologies in AI.
+- Prepared classes and notes regarding AI and researched new technology on AI.
+- Worked on AI projects, and took classes to learn about new technologies in AI.
 
 **Data Annotator at Quantigo.ai (_November 2021 - January 2022_)**
 - Data cleaning, Data preprocessing, Data annotation, working with Big data.
 
 **Research Assistant at Daffodil International University (_December 2020 - November 2021_)**
-- Preparing classes and notes regarding AI, and research on AI.
-- Working on AI projects, taking classes, taking exams and reporting.
+- Prepared classes and notes regarding AI, and research on AI.
+- Worked on AI projects, took classes, took exams and reported.
 
 **Researcher at DIU ML And NLP Lab (_December 2019 - November 2022_)**
-- Research on AI technologies, Working on NLP, ML and Data Science projects.
-- Working on Data set Speech recognition, working on data set for Bangla Language.
+- Research on AI technologies, Worked on NLP, ML and Data Science projects.
+- Worked on Data set Speech recognition, worked on data set for Bangla Language.
 - Attend different types of Conferences, and presentations on different types of Conferences, and search for the best conferences.
 - Publications paper, research on paper, paper writing.
 
@@ -39,11 +39,11 @@ Hello!! This is Abir Abdullha. I have a couple of years of experience in data sc
 - Full training to work on online, freelancing.
 - More than 50 people got earning facilities by working online.
 - Guide them proper way to know basic computer skills, training them to develop computer basic skills.
-- Graphics design, data entry, surveys, data collection, Machine learning different types of projects are involved where many employees get their chance to work and get payment daily.
+- Graphics design, data entry, surveys, data collection, Machine learning different types of projects were involved where many employees got their chance to work and got payment daily.
 - Managed a large number of people and developed a platform where they could earn their skills.
 
 **Founder of Get_project (_2022 - present_)**
-- Work on AI technologies, Working on NLP, ML and Data Science projects.
+- Working on AI technologies, Working on NLP, ML and Data Science projects.
 - Research on AI, NLP, ML and Data Science projects, a proper guide to publications of any type of research work.
 - Web development projects, AI projects, and Customer service projects.
 - Managing different types of projects and managing every team.
@@ -52,7 +52,7 @@ Hello!! This is Abir Abdullha. I have a couple of years of experience in data sc
 - Product sell, Product Marketing, Fillup sales target.
 
 **Teacher at Borno Coaching Center (_December 2016 - May 2019_)**
-- Taking classes, Preparing lessons, taking exams, preparing notes, etc.
+- Took classes, Prepared lessons, took exams, prepared notes, etc.
 
 **Football (_2013- Presents_)**
 - Organizing one of the most popular football tournaments in Dhaka (_2016,2018,2023,2024_)
@@ -60,6 +60,20 @@ Hello!! This is Abir Abdullha. I have a couple of years of experience in data sc
 - Captain in one of the most popular football team in Dhaka Named FC LCBD.
 
 ## Projects
+### Upcoming cyber attack prediction using machine learning
+[Project Link](https://github.com/Abir0810/Upcoming_cyber_attack_prediction_using_machine_learning)
+
+It analyzes patterns from past cyberattacks using algorithms such as J48, KNN, REPTree, and Random Forest; second, it forecasts future cyberattacks based on those patterns.
+
+![Upcoming cyber attack prediction using machine learning](cy.png)
+
+### Sign language prediction using deep learning model
+[Project Link](https://github.com/Abir0810/Sign_language_prediction_using_deep_learning_model)
+
+We have trained CNN (Convolutional Neural Network) algorithm to predict sign language. There are also pretrained models which also used in this model.
+
+![Sign language prediction using deep learning model](sign.jpg)
+
 ### Apple plant trees disease detection using CNN and Sequential model
 [Project Link](https://github.com/Abir0810/apple_trees_plant_dieases_prediction_using_Sequential_model_and_cnn)
 
@@ -156,6 +170,11 @@ These are linear regression code .There are linear model,small, medium and large
 [Project Link](https://github.com/Abir0810/osaka_um_datamodel_using_machine_learning)
 
 The model will solve the different problems on um. What is the time and is it possible to grow um in Bangladesh? The model visualizes all the data and makes predictions on these.
+
+### Voice flow demo
+[Project Link](https://github.com/Abir0810/Voice_flow_demo)
+
+Automated voice recognitions and answer from the model. Voice assistant. 
 
 ## Training, Awards, Mileston And Certifications
 - Introduction to data science in python (University of Michigan, Auguest-2020)
