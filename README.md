@@ -10,7 +10,7 @@ Hello!! This is Abir Abdullha. I have a couple of years of experience in data sc
 - S.S.C, Science | Mirpur Bangla High School And College | 4.56 (_2013_)
 
 ## Work Experience
-**Data Science Reseacher & AI Tutor at Toloka. (_March 2024 - Present_)**
+**Data Science Reseacher & AI Tutor at Toloka (_March 2024 - Present_)**
 - Research on different types of topics based on Machine learning, Deep learning, NLP and Big data.
 - Need to train LLM model for the automated generated reply.
 - Write content on different types of AI topics.
