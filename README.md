@@ -10,6 +10,12 @@ Hello!! This is Abir Abdullha. I have a couple of years of experience in data sc
 - S.S.C, Science | Mirpur Bangla High School And College | 4.56 (_2013_)
 
 ## Work Experience
+**Data Science Reseacher & AI Tutor at Toloka. (_March 2024 - Present_)**
+- Research on different types of topics based on Machine learning, Deep learning, NLP and Big data.
+- Need to train LLM model for the automated generated reply.
+- Write content on different types of AI topics.
+- Research new technology, algorithms, models and library based on AI.
+
 **Project Manager at iSharify Ltd. (_Jan 2022 - Present_)**
 - Working as a team leader, Managing different types of projects like data management, product analysis, e-commerce and Customer service.
 - Checking all the tasks from the team, setup meetings with the client, and updating all projects to the client.
@@ -60,6 +66,13 @@ Hello!! This is Abir Abdullha. I have a couple of years of experience in data sc
 - Captain in one of the most popular football team in Dhaka Named FC LCBD.
 
 ## Projects
+### Box detection using Computer Vision
+[Project Link](https://github.com/Abir0810/Box_Detection_RANSAC-algorithm)
+
+Box detection using Computer vision. I have used OpenCv and deep learning algorithms. I have also used RANSAC algorithm. 
+
+![Box detection using Computer Vision](box.png)
+
 ### Upcoming cyber attack prediction using machine learning
 [Project Link](https://github.com/Abir0810/Upcoming_cyber_attack_prediction_using_machine_learning)
 
