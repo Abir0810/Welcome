@@ -10,13 +10,20 @@ Hello!! This is Abir Abdullha. I have a couple of years of experience in data sc
 - S.S.C, Science | Mirpur Bangla High School And College | 4.56 (_2013_)
 
 ## Work Experience
-**Data Science Reseacher & AI Tutor at Toloka (_March 2024 - Present_)**
+
+**Senior Software Engineer (AI/ML) at Fanfare Bangladesh Ltd. (Team Leader) (_July 2024 - Present_)**
+- Research and implement on different types of projects on Machine learning, Deep learning, NLP and Big data.
+- Develop machine learning, deep learning, NLP and computer vision projects.
+- Team leading, Client handling, project planning and Project management. 
+- Research new technology, algorithms, models and library based on AI.
+
+**Data Science Reseacher & AI Tutor at Toloka (_March 2024 - July 2024_)**
 - Research on different types of topics based on Machine learning, Deep learning, NLP and Big data.
 - Need to train LLM model for the automated generated reply.
 - Write content on different types of AI topics.
 - Research new technology, algorithms, models and library based on AI.
 
-**Project Manager at iSharify Ltd. (_Jan 2022 - Present_)**
+**Project Manager at iSharify Ltd. (_Jan 2022 - July 2024_)**
 - Working as a team leader, Managing different types of projects like data management, product analysis, e-commerce and Customer service.
 - Checking all the tasks from the team, setup meetings with the client, and updating all projects to the client.
 - Preparing all the plans for the new projects, analysis every project, and trying to resolve every problem in the project.
