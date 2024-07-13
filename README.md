@@ -11,7 +11,7 @@ Hello!! This is Abir Abdullha. I have a couple of years of experience in data sc
 
 ## Work Experience
 
-**Senior Software Engineer (AI/ML) at Fanfare Bangladesh Ltd. (Team Leader) (_July 2024 - Present_)**
+**Senior Software Engineer (AI/ML) (Team Leader) at Fanfare Bangladesh Ltd. (_July 2024 - Present_)**
 - Research and implement on different types of projects on Machine learning, Deep learning, NLP and Big data.
 - Develop machine learning, deep learning, NLP and computer vision projects.
 - Team leading, Client handling, project planning and Project management. 
