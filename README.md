@@ -11,10 +11,16 @@ Hello!! This is Abir Abdullha. I have a couple of years of experience in data sc
 
 ## Work Experience
 
-**Senior Software Engineer (AI/ML) (Team Leader) at Fanfare Bangladesh Ltd. (_July 2024 - Present_)**
+**Senior Software Engineer (AI/ML) (Team Leader) at Talent Pro Bangladesh Ltd. (_July 2024 - Present_)**
 - Research and implement on different types of projects on Machine learning, Deep learning, NLP and Big data.
 - Develop machine learning, deep learning, NLP and computer vision projects.
 - Team leading, Client handling, project planning and Project management. 
+- Research new technology, algorithms, models and library based on AI.
+
+**AI Agent Developer at Jeysol Buiness Solution UK Ltd. (_Feb 2025 - Present_)**
+- Research and implement on different types AI agents.
+- Develop Chatbot system. 
+- AI-driven Automation. 
 - Research new technology, algorithms, models and library based on AI.
 
 **Data Science Reseacher & AI Tutor at Toloka (_March 2024 - July 2024_)**
@@ -239,3 +245,5 @@ Researchgate: https://www.researchgate.net/profile/Abir_Abdullha
 [Google sites](https://sites.google.com/view/abirabdullah/home): https://sites.google.com/view/abirabdullah/home 
 
 [Kaggle](https://www.kaggle.com/abirabdullah): https://www.kaggle.com/abirabdullah
+
+[Medium](https://medium.com/@abir.abdullah16): https://medium.com/@abir.abdullah16
