@@ -17,7 +17,7 @@ Hello!! This is Abir Abdullha. I have a couple of years of experience in data sc
 - Team leading, Client handling, project planning and Project management. 
 - Research new technology, algorithms, models and library based on AI.
 
-**AI Agent Developer at Jeysol Buiness Solution UK Ltd. (_Feb 2025 - Present_)**
+**AI Agent Developer at Jeysol Buiness Solution UK Ltd. (_Feb 2025 - May 2025_)**
 - Research and implement on different types AI agents.
 - Develop Chatbot system. 
 - AI-driven Automation. 
