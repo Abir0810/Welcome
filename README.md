@@ -15,7 +15,7 @@ I’m passionate about innovation, research, and turning complex ideas into prac
 
 ## Work Experience
 
-**Assistant Tech Manager | Fanfare Bangladesh Ltd. (_July 2024 - Present_)**
+**Assistant Tech Manager | Fanfare Bangladesh Ltd. (_Jan 2026 - Present_)**
 - Leading engineering teams to design and deliver scalable AI-driven products.
 - Overseeing end-to-end product development, from research and architecture to deployment.
 - Managing cloud infrastructure and development servers, ensuring efficient deployment, scalability, and system reliability.
