@@ -1,8 +1,12 @@
 # Welcome
 
-Hello!! This is Abir Abdullha. I have a couple of years of experience in data science, machine learning, deep learning and project management. I am hard-working, professional, and highly motivated. Always excited for more experience and knowledge. Feel free to explore my portfolio and get in touch to discuss how we can work together!
+Hello, I’m Abir Abdullha, an Assistant Tech Manager specializing in AI, Machine Learning, and scalable product development.
 
-#### Technical Skills: Machine Learning, Data Science, Researcher, Data Visualization Tool, Deep Learning, Client Management, Python, Business Analyst, DBMS, E-commerce, Project Management
+I lead teams to design and deliver intelligent systems across NLP, Computer Vision, and AI-driven automation. With a strong background in both engineering and project management, I focus on building impactful solutions that solve real-world business problems.
+
+I’m passionate about innovation, research, and turning complex ideas into practical, high-performance products. Let’s connect and explore how we can build something meaningful together.
+
+#### Technical Skills: Machine Learning, Deep Learning, Natural Language Processing (NLP), Computer Vision, Large Language Models (LLMs), AI Agents, Data Science, Data Analysis, Data Visualization, Feature Engineering, Python, TensorFlow, PyTorch, Scikit-learn, OpenCV, Pandas, NumPy, RESTful APIs, System Design, AI Product Development, Backend Integration, Cloud Computing, Model Deployment, CI/CD, DevOps, Server Management, Agile/Scrum, Project Management, Product Management, Client Management, Requirement Analysis, DBMS, Git, Version Control
 
 ## Education
 - B.Sc., CSE | Daffodil International University | 3.03 (_2020_)						       		
@@ -11,42 +15,54 @@ Hello!! This is Abir Abdullha. I have a couple of years of experience in data sc
 
 ## Work Experience
 
-**Senior Software Engineer (AI/ML) (Team Leader) at Talent Pro Bangladesh Ltd. (_July 2024 - Present_)**
-- Research and implement on different types of projects on Machine learning, Deep learning, NLP and Big data.
-- Develop machine learning, deep learning, NLP and computer vision projects.
-- Team leading, Client handling, project planning and Project management. 
-- Research new technology, algorithms, models and library based on AI.
+**Assistant Tech Manager | Fanfare Bangladesh Ltd. (_July 2024 - Present_)**
+- Leading engineering teams to design and deliver scalable AI-driven products.
+- Overseeing end-to-end product development, from research and architecture to deployment.
+- Managing cloud infrastructure and development servers, ensuring efficient deployment, scalability, and system reliability.
+- Handling DevOps workflows including CI/CD pipelines, model deployment, version control, and production monitoring.
+- Managing client communication, requirement analysis, and project execution strategies. 
+- Driving innovation by researching, evaluating, and integrating advanced AI models, tools, and frameworks.
+- Ensuring delivery of high-quality solutions aligned with business goals and performance standards.
+- Ensuring high-quality delivery through code reviews, architecture decisions, and performance optimization.
 
-**AI Agent Developer at Jeysol Buiness Solution UK Ltd. (_Feb 2025 - May 2025_)**
+**Senior Software Engineer (AI/ML) (Team Leader) | Fanfare Bangladesh Ltd. (_July 2024 - 2026_)**
+- Led development of multiple AI-driven products across NLP, Computer Vision, and automation systems.
+- Designed and implemented machine learning and deep learning models for real-world business applications.
+- Managed a team of engineers, assigning tasks, reviewing code, and ensuring timely delivery. 
+- Handled client interactions, gathered requirements, and translated them into technical solutions.
+- Contributed to project planning, system design, and architecture decisions.
+- Researched and applied modern AI algorithms, tools, and frameworks to improve system performance.
+
+**AI Agent Developer | Jeysol Buiness Solution UK Ltd. (_Feb 2025 - May 2025_)**
 - Research and implement on different types AI agents.
 - Develop Chatbot system. 
 - AI-driven Automation. 
 - Research new technology, algorithms, models and library based on AI.
 
-**Data Science Reseacher & AI Tutor at Toloka (_March 2024 - July 2024_)**
+**Data Science Reseacher & AI Tutor | Toloka (_March 2024 - July 2024_)**
 - Research on different types of topics based on Machine learning, Deep learning, NLP and Big data.
 - Need to train LLM model for the automated generated reply.
 - Write content on different types of AI topics.
 - Research new technology, algorithms, models and library based on AI.
 
-**Project Manager at iSharify Ltd. (_Jan 2022 - July 2024_)**
+**Project Manager | iSharify Ltd. (_Jan 2022 - July 2024_)**
 - Working as a team leader, Managing different types of projects like data management, product analysis, e-commerce and Customer service.
 - Checking all the tasks from the team, setup meetings with the client, and updating all projects to the client.
 - Preparing all the plans for the new projects, analysis every project, and trying to resolve every problem in the project.
 - I have developed two deep learning models for customer service team and one machine learning model for project management.
 
-**Artificial Intelleigence Instructor at Microland IT solutions LTD. (_July 2022 - December 2022_)**
+**Artificial Intelleigence Instructor | Microland IT solutions LTD. (_July 2022 - December 2022_)**
 - Prepared classes and notes regarding AI and researched new technology on AI.
 - Worked on AI projects, and took classes to learn about new technologies in AI.
 
-**Data Annotator at Quantigo.ai (_November 2021 - January 2022_)**
+**Data Annotator | Quantigo.ai (_November 2021 - January 2022_)**
 - Data cleaning, Data preprocessing, Data annotation, working with Big data.
 
-**Research Assistant at Daffodil International University (_December 2020 - November 2021_)**
+**Research Assistant | Daffodil International University (_December 2020 - November 2021_)**
 - Prepared classes and notes regarding AI, and research on AI.
 - Worked on AI projects, took classes, took exams and reported.
 
-**Researcher at DIU ML And NLP Lab (_December 2019 - November 2022_)**
+**Researcher | DIU ML And NLP Lab (_December 2019 - November 2022_)**
 - Research on AI technologies, Worked on NLP, ML and Data Science projects.
 - Worked on Data set Speech recognition, worked on data set for Bangla Language.
 - Attend different types of Conferences, and presentations on different types of Conferences, and search for the best conferences.
