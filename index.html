@@ -276,6 +276,105 @@
         .timeline-card ul { padding-left: 16px; font-size: 0.85rem; color: var(--text); margin: 0; }
         .timeline-card ul li { margin-bottom: 4px; line-height: 1.6; }
 
+        /* ===== PRODUCT PORTFOLIO ===== */
+        .product-category-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(88,166,255,0.1);
+            border: 1px solid rgba(88,166,255,0.25);
+            color: var(--accent);
+            font-size: 0.78rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            padding: 5px 14px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+        .product-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            overflow: hidden;
+            transition: all 0.3s;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .product-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 14px 40px rgba(88,166,255,0.12);
+        }
+        .product-card-header {
+            padding: 28px 24px 20px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        .product-icon {
+            width: 54px;
+            height: 54px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+        .product-card-body {
+            padding: 0 24px 24px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .product-card h5 {
+            color: var(--heading);
+            font-weight: 700;
+            font-size: 1.05rem;
+            margin-bottom: 4px;
+        }
+        .product-card .product-role {
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 2px 10px;
+            border-radius: 12px;
+            display: inline-block;
+            margin-bottom: 12px;
+        }
+        .role-dev { background: rgba(63,185,80,0.12); color: var(--accent2); border: 1px solid rgba(63,185,80,0.25); }
+        .role-owner { background: rgba(88,166,255,0.12); color: var(--accent); border: 1px solid rgba(88,166,255,0.25); }
+        .product-card p {
+            font-size: 0.86rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+            flex: 1;
+        }
+        .product-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            margin-top: 16px;
+            background: rgba(88,166,255,0.1);
+            border: 1px solid rgba(88,166,255,0.25);
+            color: var(--accent);
+            font-size: 0.82rem;
+            font-weight: 600;
+            padding: 7px 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.25s;
+            align-self: flex-start;
+        }
+        .product-link:hover { background: var(--accent); color: #0d1117; }
+        .product-divider {
+            height: 1px;
+            background: var(--border);
+            margin: 35px 0;
+        }
+
         /* ===== PROJECT CARDS ===== */
         .project-card {
             background: var(--bg-card);
@@ -447,6 +546,7 @@
                 <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
                 <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
                 <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                 <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
                 <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
@@ -500,14 +600,17 @@
         <div class="section-divider"></div>
         <div class="row gy-4 align-items-start">
             <div class="col-lg-7">
-                <p style="font-size: 1.02rem; line-height: 1.85; margin-bottom: 14px;">
-                    I'm an <strong style="color: var(--accent);">Assistant Tech Manager</strong> at Fanfare Bangladesh Ltd., specializing in AI, Machine Learning, and scalable product development. I lead teams to design and deliver intelligent systems across NLP, Computer Vision, and AI-driven automation.
+                <p style="font-size: 1.02rem; line-height: 1.85; margin-bottom: 16px;">
+                    I'm <strong style="color: var(--accent);">Abir Abdullha</strong>, an Assistant Tech Manager, Product Owner, and Project Manager currently working at Fanfare Bangladesh Ltd. My work sits at the intersection of AI engineering and product thinking, where I help teams build things that are technically solid and actually useful to people.
                 </p>
-                <p style="line-height: 1.85; margin-bottom: 14px; color: var(--text-muted);">
-                    With a strong background in both engineering and project management, I focus on building impactful solutions that solve real-world business problems. I'm passionate about innovation, research, and turning complex ideas into practical, high-performance products.
+                <p style="line-height: 1.85; margin-bottom: 16px; color: var(--text-muted);">
+                    Over the years I've worked across the full product lifecycle, from early research and system architecture to deployment, team management, and client delivery. I've led the development of products in social commerce, real estate, AI-driven CRM, and computer vision, and I've been involved in over <strong style="color: var(--text);">50 AI projects</strong> spanning NLP, Deep Learning, Computer Vision, and intelligent automation.
+                </p>
+                <p style="line-height: 1.85; margin-bottom: 16px; color: var(--text-muted);">
+                    I started my journey as a researcher at Daffodil International University's ML and NLP Lab, published papers at international conferences, and went on to train and lead engineering teams across multiple companies. Along the way I also founded two ventures, mentored 50+ people into online freelancing, and captained a football team in Dhaka. That last one taught me more about leadership than any textbook did.
                 </p>
                 <p style="line-height: 1.85; color: var(--text-muted);">
-                    From founding tech ventures to publishing research papers and delivering <strong style="color: var(--text);">40+ AI projects</strong>, I bring both technical depth and strategic leadership to every challenge. Let's connect and build something meaningful together.
+                    I care about building products that work, teams that grow, and solutions that make a measurable difference. If you're looking for someone who can bridge the gap between research and real-world delivery, I'd love to connect.
                 </p>
             </div>
             <div class="col-lg-5">
@@ -520,7 +623,7 @@
                     </div>
                     <div class="col-6">
                         <div class="stat-card">
-                            <div class="stat-num">40+</div>
+                            <div class="stat-num">50+</div>
                             <div class="stat-label">AI Projects</div>
                         </div>
                     </div>
@@ -774,6 +877,126 @@
                     </ul>
                 </div>
             </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== PRODUCT PORTFOLIO ===== -->
+<section id="products" class="section-alt">
+    <div class="container">
+        <h2 class="section-title">Product <span>Portfolio</span></h2>
+        <div class="section-divider"></div>
+
+        <!-- Product Development -->
+        <div class="d-flex align-items-center mb-4">
+            <span class="product-category-label"><i class="fas fa-rocket"></i> Product Development</span>
+        </div>
+        <div class="row g-4 mb-2">
+
+            <div class="col-md-6">
+                <div class="product-card">
+                    <div class="product-card-header" style="background: linear-gradient(135deg, rgba(255,80,30,0.08), rgba(255,140,0,0.06));">
+                        <div class="product-icon" style="background: linear-gradient(135deg, #ff501e, #ff8c00);">
+                            <i class="fas fa-shopping-bag" style="color: #fff;"></i>
+                        </div>
+                        <div>
+                            <h5>Fanfare</h5>
+                        </div>
+                    </div>
+                    <div class="product-card-body">
+                        <span class="product-role role-dev">Product Development</span>
+                        <p>Fanfare is a social commerce platform built around short shoppable videos. Users can create, share, and watch content while buying products directly from the feed, making shopping a natural part of the social experience.</p>
+                        <a href="https://fanfare.com.bd/" target="_blank" class="product-link">
+                            <i class="fas fa-external-link-alt"></i> Visit fanfare.com.bd
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="product-card">
+                    <div class="product-card-header" style="background: linear-gradient(135deg, rgba(0,180,120,0.08), rgba(0,120,200,0.06));">
+                        <div class="product-icon" style="background: linear-gradient(135deg, #00b478, #0078c8);">
+                            <i class="fas fa-home" style="color: #fff;"></i>
+                        </div>
+                        <div>
+                            <h5>RealEzy</h5>
+                        </div>
+                    </div>
+                    <div class="product-card-body">
+                        <span class="product-role role-dev">Product Development</span>
+                        <p>RealEzy is a rental property platform designed to make the housing search straightforward. Tenants can find verified listings and landlords can manage their properties, all in one place without the usual back-and-forth.</p>
+                        <a href="https://realezy.com/" target="_blank" class="product-link">
+                            <i class="fas fa-external-link-alt"></i> Visit realezy.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="product-divider"></div>
+
+        <!-- Product Owner -->
+        <div class="d-flex align-items-center mb-4">
+            <span class="product-category-label" style="background: rgba(63,185,80,0.1); border-color: rgba(63,185,80,0.25); color: var(--accent2);"><i class="fas fa-crown"></i> Product Owner</span>
+        </div>
+        <div class="row g-4">
+
+            <div class="col-md-6 col-lg-4">
+                <div class="product-card">
+                    <div class="product-card-header" style="background: linear-gradient(135deg, rgba(0,160,255,0.08), rgba(0,80,200,0.06));">
+                        <div class="product-icon" style="background: linear-gradient(135deg, #00a0ff, #0050c8);">
+                            <i class="fas fa-comments" style="color: #fff;"></i>
+                        </div>
+                        <div>
+                            <h5>Conversa AI</h5>
+                        </div>
+                    </div>
+                    <div class="product-card-body">
+                        <span class="product-role role-owner">Product Owner</span>
+                        <p>Conversa AI is a no-code platform that combines AI agents with CRM capabilities. Businesses can automate customer conversations across multiple channels without writing a single line of code, keeping response quality consistent at any scale.</p>
+                        <a href="https://conversaai.io/" target="_blank" class="product-link">
+                            <i class="fas fa-external-link-alt"></i> Visit conversaai.io
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="product-card">
+                    <div class="product-card-header" style="background: linear-gradient(135deg, rgba(0,220,220,0.08), rgba(0,120,180,0.06));">
+                        <div class="product-icon" style="background: linear-gradient(135deg, #00dcdc, #0078b4);">
+                            <i class="fas fa-couch" style="color: #fff;"></i>
+                        </div>
+                        <div>
+                            <h5>HomeAI</h5>
+                        </div>
+                    </div>
+                    <div class="product-card-body">
+                        <span class="product-role role-owner">Product Owner</span>
+                        <p>HomeAI is a design tool that lets users reimagine their living spaces using AI. Whether it's a bedroom, a garden, or a building exterior, users can upload a photo and see redesign options without hiring a designer.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="product-card">
+                    <div class="product-card-header" style="background: linear-gradient(135deg, rgba(255,180,0,0.08), rgba(200,80,0,0.06));">
+                        <div class="product-icon" style="background: linear-gradient(135deg, #ffb400, #c85000);">
+                            <i class="fas fa-film" style="color: #fff;"></i>
+                        </div>
+                        <div>
+                            <h5>Auto Reels Creation</h5>
+                        </div>
+                    </div>
+                    <div class="product-card-body">
+                        <span class="product-role role-owner">Product Owner</span>
+                        <p>Auto Reels Creation takes the effort out of video content production. The tool automatically generates short reels and story videos, making it practical for creators and businesses who need to publish consistently without spending hours in editing.</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
@@ -1058,7 +1281,7 @@
                 <div class="cert-card">
                     <div class="cert-icon" style="color: var(--accent2);"><i class="fas fa-robot"></i></div>
                     <div>
-                        <div class="cert-title">40+ AI Projects Delivered</div>
+                        <div class="cert-title">50+ AI Projects Delivered</div>
                         <div class="cert-sub">Across ML, NLP, Computer Vision & AI Agents</div>
                     </div>
                 </div>
