@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abir Abdullha | AI & Tech Manager</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0d1117;
+            --bg-secondary: #161b22;
+            --bg-card: #21262d;
+            --accent: #58a6ff;
+            --accent2: #3fb950;
+            --text: #c9d1d9;
+            --text-muted: #8b949e;
+            --heading: #f0f6fc;
+            --border: #30363d;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text);
+            scroll-behavior: smooth;
+        }
+
+        /* ===== NAVBAR ===== */
+        .navbar {
+            background: rgba(13, 17, 23, 0.97) !important;
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+            padding: 12px 0;
+        }
+        .navbar-brand {
+            font-weight: 800;
+            font-size: 1.4rem;
+            color: var(--accent) !important;
+            letter-spacing: 1px;
+        }
+        .nav-link {
+            color: var(--text) !important;
+            font-size: 0.88rem;
+            font-weight: 500;
+            transition: color 0.3s;
+            padding: 6px 12px !important;
+        }
+        .nav-link:hover { color: var(--accent) !important; }
+        .navbar-toggler { border-color: var(--border) !important; }
+        .navbar-toggler-icon { filter: invert(1); }
+
+        /* ===== HERO ===== */
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #0d1117 0%, #0f1923 40%, #0d1117 100%);
+            display: flex;
+            align-items: center;
+            padding-top: 80px;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(88,166,255,0.06) 0%, transparent 70%);
+            top: 30%;
+            right: -100px;
+            pointer-events: none;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(63,185,80,0.05) 0%, transparent 70%);
+            bottom: 10%;
+            left: -50px;
+            pointer-events: none;
+        }
+        .hero-img-wrap {
+            position: relative;
+            display: inline-block;
+        }
+        .hero-img {
+            width: 210px;
+            height: 210px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--accent);
+            box-shadow: 0 0 40px rgba(88,166,255,0.25), 0 0 80px rgba(88,166,255,0.08);
+        }
+        .hero-img-ring {
+            position: absolute;
+            top: -8px; left: -8px; right: -8px; bottom: -8px;
+            border-radius: 50%;
+            border: 2px dashed rgba(88,166,255,0.3);
+            animation: spin 20s linear infinite;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: var(--heading);
+            line-height: 1.2;
+            margin-bottom: 8px;
+        }
+        .hero h1 span { color: var(--accent); }
+        .hero .subtitle {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 18px;
+            font-weight: 400;
+        }
+        .hero-badges { margin-bottom: 20px; }
+        .hero-badges .hbadge {
+            display: inline-block;
+            background: rgba(88,166,255,0.08);
+            color: var(--accent);
+            border: 1px solid rgba(88,166,255,0.25);
+            font-size: 0.78rem;
+            padding: 5px 13px;
+            margin: 3px;
+            border-radius: 20px;
+            font-weight: 500;
+        }
+        .social-links { margin-bottom: 25px; }
+        .social-links a {
+            color: var(--text-muted);
+            font-size: 1.25rem;
+            margin-right: 16px;
+            transition: color 0.3s, transform 0.3s;
+            display: inline-block;
+        }
+        .social-links a:hover { color: var(--accent); transform: translateY(-4px); }
+        .btn-primary-custom {
+            background: var(--accent);
+            color: #0d1117;
+            font-weight: 700;
+            font-size: 0.9rem;
+            padding: 10px 26px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.3s;
+            display: inline-block;
+            margin-right: 10px;
+            margin-bottom: 8px;
+        }
+        .btn-primary-custom:hover { background: #79b7ff; color: #0d1117; transform: translateY(-2px); box-shadow: 0 8px 20px rgba(88,166,255,0.3); }
+        .btn-outline-custom {
+            border: 2px solid var(--accent);
+            color: var(--accent);
+            font-weight: 600;
+            font-size: 0.9rem;
+            padding: 8px 26px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.3s;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .btn-outline-custom:hover { background: var(--accent); color: #0d1117; transform: translateY(-2px); }
+
+        /* ===== SECTIONS ===== */
+        section { padding: 85px 0; }
+        .section-alt { background: var(--bg-secondary); }
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--heading);
+            margin-bottom: 8px;
+        }
+        .section-title span { color: var(--accent); }
+        .section-divider {
+            width: 55px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent), var(--accent2));
+            border-radius: 2px;
+            margin-bottom: 40px;
+        }
+
+        /* ===== ABOUT STATS ===== */
+        .stat-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            transition: border-color 0.3s, transform 0.3s;
+        }
+        .stat-card:hover { border-color: var(--accent); transform: translateY(-4px); }
+        .stat-card .stat-num { font-size: 2rem; font-weight: 800; color: var(--accent); }
+        .stat-card .stat-label { font-size: 0.82rem; color: var(--text-muted); }
+
+        /* ===== SKILLS ===== */
+        .skill-category {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            height: 100%;
+            transition: border-color 0.3s;
+        }
+        .skill-category:hover { border-color: var(--accent); }
+        .skill-category h5 {
+            color: var(--accent);
+            font-size: 0.82rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            margin-bottom: 14px;
+        }
+        .skill-tag {
+            display: inline-block;
+            background: rgba(88,166,255,0.08);
+            color: var(--text);
+            border: 1px solid rgba(88,166,255,0.15);
+            padding: 4px 11px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            margin: 3px;
+            transition: all 0.2s;
+        }
+        .skill-tag:hover { background: rgba(88,166,255,0.2); border-color: var(--accent); color: var(--heading); }
+
+        /* ===== TIMELINE ===== */
+        .timeline { position: relative; padding-left: 32px; }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 9px;
+            top: 5px;
+            bottom: 5px;
+            width: 2px;
+            background: linear-gradient(180deg, var(--accent) 0%, var(--accent2) 100%);
+            opacity: 0.5;
+        }
+        .timeline-item { position: relative; margin-bottom: 28px; }
+        .timeline-dot {
+            position: absolute;
+            left: -27px;
+            top: 18px;
+            width: 14px;
+            height: 14px;
+            background: var(--accent);
+            border-radius: 50%;
+            border: 3px solid var(--bg-primary);
+            box-shadow: 0 0 10px rgba(88,166,255,0.5);
+        }
+        .timeline-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px 22px;
+            transition: border-color 0.3s, transform 0.3s;
+        }
+        .timeline-card:hover { border-color: var(--accent); transform: translateX(5px); }
+        .timeline-card h5 { color: var(--heading); font-weight: 600; font-size: 1rem; margin-bottom: 3px; }
+        .timeline-card .company { color: var(--accent); font-size: 0.87rem; font-weight: 500; margin-bottom: 4px; }
+        .timeline-card .period {
+            display: inline-block;
+            background: rgba(88,166,255,0.1);
+            color: var(--text-muted);
+            font-size: 0.78rem;
+            padding: 2px 10px;
+            border-radius: 20px;
+            margin-bottom: 12px;
+        }
+        .timeline-card ul { padding-left: 16px; font-size: 0.85rem; color: var(--text); margin: 0; }
+        .timeline-card ul li { margin-bottom: 4px; line-height: 1.6; }
+
+        /* ===== PROJECT CARDS ===== */
+        .project-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .project-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-6px);
+            box-shadow: 0 12px 35px rgba(88,166,255,0.12);
+        }
+        .project-card .proj-img {
+            width: 100%;
+            height: 170px;
+            object-fit: cover;
+        }
+        .project-card .proj-no-img {
+            width: 100%;
+            height: 170px;
+            background: linear-gradient(135deg, rgba(88,166,255,0.1), rgba(63,185,80,0.1));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: var(--accent);
+        }
+        .project-card .card-body {
+            padding: 16px 18px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .project-card h6 { color: var(--heading); font-weight: 600; font-size: 0.9rem; margin-bottom: 7px; }
+        .project-card p { font-size: 0.82rem; color: var(--text-muted); flex: 1; line-height: 1.6; }
+        .project-card .proj-link {
+            color: var(--accent);
+            font-size: 0.82rem;
+            text-decoration: none;
+            font-weight: 500;
+            margin-top: 10px;
+            display: inline-block;
+        }
+        .project-card .proj-link:hover { text-decoration: underline; }
+
+        /* ===== EDUCATION ===== */
+        .edu-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 22px;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            transition: border-color 0.3s, transform 0.3s;
+        }
+        .edu-card:hover { border-color: var(--accent2); transform: translateX(5px); }
+        .edu-icon {
+            font-size: 2rem;
+            color: var(--accent);
+            min-width: 52px;
+            text-align: center;
+        }
+        .edu-card h5 { color: var(--heading); font-size: 1rem; font-weight: 600; margin-bottom: 5px; }
+        .edu-card p { color: var(--text-muted); font-size: 0.85rem; margin: 0; }
+        .edu-card .grade { color: var(--accent2); font-weight: 600; }
+
+        /* ===== PUBLICATIONS ===== */
+        .pub-item {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--accent);
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin-bottom: 14px;
+            font-size: 0.87rem;
+            color: var(--text);
+            line-height: 1.7;
+            transition: border-left-color 0.3s;
+        }
+        .pub-item:hover { border-left-color: var(--accent2); }
+
+        /* ===== CERT CARDS ===== */
+        .cert-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 18px 20px;
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            transition: border-color 0.3s;
+        }
+        .cert-card:hover { border-color: var(--accent); }
+        .cert-card .cert-icon { font-size: 1.5rem; margin-top: 2px; min-width: 30px; }
+        .cert-card .cert-title { color: var(--heading); font-weight: 600; font-size: 0.92rem; margin-bottom: 3px; }
+        .cert-card .cert-sub { color: var(--text-muted); font-size: 0.8rem; }
+
+        /* ===== GALLERY ===== */
+        .gallery-wrap { overflow: hidden; border-radius: 10px; }
+        .gallery-img {
+            width: 100%;
+            height: 185px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: all 0.35s;
+            border: 2px solid transparent;
+            display: block;
+        }
+        .gallery-img:hover { border-color: var(--accent); transform: scale(1.05); }
+
+        /* ===== CONTACT ===== */
+        .contact-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 28px 16px;
+            text-align: center;
+            transition: all 0.3s;
+            height: 100%;
+        }
+        .contact-card:hover { border-color: var(--accent); transform: translateY(-6px); box-shadow: 0 10px 25px rgba(88,166,255,0.12); }
+        .contact-card i { font-size: 2rem; color: var(--accent); margin-bottom: 12px; display: block; }
+        .contact-card h6 { color: var(--heading); font-weight: 600; margin-bottom: 8px; font-size: 0.9rem; }
+        .contact-card a { color: var(--text-muted); font-size: 0.8rem; text-decoration: none; word-break: break-all; }
+        .contact-card a:hover { color: var(--accent); }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+            padding: 35px 0;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.84rem;
+        }
+        footer .footer-name { color: var(--accent); font-weight: 700; font-size: 1.1rem; margin-bottom: 5px; }
+
+        /* ===== SCROLL BAR ===== */
+        ::-webkit-scrollbar { width: 7px; }
+        ::-webkit-scrollbar-track { background: var(--bg-primary); }
+        ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .hero { padding-top: 90px; text-align: center; }
+            .hero-img { width: 160px; height: 160px; }
+            .social-links { justify-content: center; display: flex; flex-wrap: wrap; gap: 8px; }
+        }
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="80">
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+    <div class="container">
+        <a class="navbar-brand" href="#">AA</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto gap-1">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="home">
+    <div class="container">
+        <div class="row align-items-center gy-4">
+            <div class="col-md-4 text-center">
+                <div class="hero-img-wrap d-inline-block">
+                    <div class="hero-img-ring"></div>
+                    <img src="RD 46872.jpeg" alt="Abir Abdullha" class="hero-img">
+                </div>
+            </div>
+            <div class="col-md-8">
+                <h1>Hi, I'm <span>Abir Abdullha</span></h1>
+                <p class="subtitle">Assistant Tech Manager &nbsp;·&nbsp; AI/ML Engineer &nbsp;·&nbsp; Researcher</p>
+                <div class="hero-badges">
+                    <span class="hbadge">🤖 AI & Machine Learning</span>
+                    <span class="hbadge">👁 Computer Vision</span>
+                    <span class="hbadge">💬 NLP & LLMs</span>
+                    <span class="hbadge">☁️ Cloud & DevOps</span>
+                    <span class="hbadge">📊 Data Science</span>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/abir-abdullha-720b7118b/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Abir0810" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.kaggle.com/abirabdullah" target="_blank" title="Kaggle"><i class="fab fa-kaggle"></i></a>
+                    <a href="https://medium.com/@abir.abdullah16" target="_blank" title="Medium"><i class="fab fa-medium"></i></a>
+                    <a href="https://www.researchgate.net/profile/Abir_Abdullha" target="_blank" title="ResearchGate"><i class="fab fa-researchgate"></i></a>
+                    <a href="https://sites.google.com/view/abirabdullah/home" target="_blank" title="Google Sites"><i class="fas fa-globe"></i></a>
+                    <a href="mailto:abir.abdullah16@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+                <a href="#projects" class="btn-primary-custom">View Projects</a>
+                <a href="#contact" class="btn-outline-custom">Get In Touch</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about" class="section-alt">
+    <div class="container">
+        <h2 class="section-title">About <span>Me</span></h2>
+        <div class="section-divider"></div>
+        <div class="row gy-4 align-items-start">
+            <div class="col-lg-7">
+                <p style="font-size: 1.02rem; line-height: 1.85; margin-bottom: 14px;">
+                    I'm an <strong style="color: var(--accent);">Assistant Tech Manager</strong> at Fanfare Bangladesh Ltd., specializing in AI, Machine Learning, and scalable product development. I lead teams to design and deliver intelligent systems across NLP, Computer Vision, and AI-driven automation.
+                </p>
+                <p style="line-height: 1.85; margin-bottom: 14px; color: var(--text-muted);">
+                    With a strong background in both engineering and project management, I focus on building impactful solutions that solve real-world business problems. I'm passionate about innovation, research, and turning complex ideas into practical, high-performance products.
+                </p>
+                <p style="line-height: 1.85; color: var(--text-muted);">
+                    From founding tech ventures to publishing research papers and delivering <strong style="color: var(--text);">40+ AI projects</strong>, I bring both technical depth and strategic leadership to every challenge. Let's connect and build something meaningful together.
+                </p>
+            </div>
+            <div class="col-lg-5">
+                <div class="row g-3">
+                    <div class="col-6">
+                        <div class="stat-card">
+                            <div class="stat-num">5+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="stat-card">
+                            <div class="stat-num">40+</div>
+                            <div class="stat-label">AI Projects</div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="stat-card">
+                            <div class="stat-num">3</div>
+                            <div class="stat-label">Publications</div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="stat-card">
+                            <div class="stat-num">50+</div>
+                            <div class="stat-label">People Led</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section id="skills">
+    <div class="container">
+        <h2 class="section-title">Technical <span>Skills</span></h2>
+        <div class="section-divider"></div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="skill-category">
+                    <h5><i class="fas fa-brain me-2"></i>AI & Machine Learning</h5>
+                    <span class="skill-tag">Machine Learning</span>
+                    <span class="skill-tag">Deep Learning</span>
+                    <span class="skill-tag">NLP</span>
+                    <span class="skill-tag">Computer Vision</span>
+                    <span class="skill-tag">LLMs</span>
+                    <span class="skill-tag">AI Agents</span>
+                    <span class="skill-tag">Feature Engineering</span>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="skill-category">
+                    <h5><i class="fas fa-code me-2"></i>Libraries & Frameworks</h5>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">TensorFlow</span>
+                    <span class="skill-tag">PyTorch</span>
+                    <span class="skill-tag">Scikit-learn</span>
+                    <span class="skill-tag">OpenCV</span>
+                    <span class="skill-tag">Pandas</span>
+                    <span class="skill-tag">NumPy</span>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="skill-category">
+                    <h5><i class="fas fa-chart-bar me-2"></i>Data Science</h5>
+                    <span class="skill-tag">Data Science</span>
+                    <span class="skill-tag">Data Analysis</span>
+                    <span class="skill-tag">Data Visualization</span>
+                    <span class="skill-tag">Big Data</span>
+                    <span class="skill-tag">DBMS</span>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="skill-category">
+                    <h5><i class="fas fa-cloud me-2"></i>Cloud & DevOps</h5>
+                    <span class="skill-tag">Cloud Computing</span>
+                    <span class="skill-tag">Model Deployment</span>
+                    <span class="skill-tag">CI/CD</span>
+                    <span class="skill-tag">DevOps</span>
+                    <span class="skill-tag">Server Management</span>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="skill-category">
+                    <h5><i class="fas fa-network-wired me-2"></i>Engineering</h5>
+                    <span class="skill-tag">RESTful APIs</span>
+                    <span class="skill-tag">System Design</span>
+                    <span class="skill-tag">AI Product Dev</span>
+                    <span class="skill-tag">Backend Integration</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">Version Control</span>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="skill-category">
+                    <h5><i class="fas fa-users me-2"></i>Management</h5>
+                    <span class="skill-tag">Agile / Scrum</span>
+                    <span class="skill-tag">Project Management</span>
+                    <span class="skill-tag">Product Management</span>
+                    <span class="skill-tag">Client Management</span>
+                    <span class="skill-tag">Requirement Analysis</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== EXPERIENCE ===== -->
+<section id="experience" class="section-alt">
+    <div class="container">
+        <h2 class="section-title">Work <span>Experience</span></h2>
+        <div class="section-divider"></div>
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <h5>Assistant Tech Manager</h5>
+                    <div class="company">Fanfare Bangladesh Ltd.</div>
+                    <span class="period"><i class="far fa-calendar-alt me-1"></i>Jan 2026 – Present</span>
+                    <ul>
+                        <li>Leading engineering teams to design and deliver scalable AI-driven products.</li>
+                        <li>Overseeing end-to-end product development from research and architecture to deployment.</li>
+                        <li>Managing cloud infrastructure, DevOps workflows including CI/CD pipelines, model deployment, and production monitoring.</li>
+                        <li>Driving innovation by researching and integrating advanced AI models, tools, and frameworks.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <h5>Senior Software Engineer (AI/ML) — Team Leader</h5>
+                    <div class="company">Fanfare Bangladesh Ltd.</div>
+                    <span class="period"><i class="far fa-calendar-alt me-1"></i>July 2024 – Jan 2026</span>
+                    <ul>
+                        <li>Led development of multiple AI-driven products across NLP, Computer Vision, and automation systems.</li>
+                        <li>Designed and implemented ML and DL models for real-world business applications.</li>
+                        <li>Managed a team of engineers, assigning tasks, reviewing code, and ensuring timely delivery.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <h5>AI Agent Developer</h5>
+                    <div class="company">Jeysol Business Solution UK Ltd.</div>
+                    <span class="period"><i class="far fa-calendar-alt me-1"></i>Feb 2025 – May 2025</span>
+                    <ul>
+                        <li>Researched and implemented different types of AI agents and chatbot systems.</li>
+                        <li>Developed AI-driven automation solutions and researched new AI technologies.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <h5>Data Science Researcher & AI Tutor</h5>
+                    <div class="company">Toloka</div>
+                    <span class="period"><i class="far fa-calendar-alt me-1"></i>March 2024 – July 2024</span>
+                    <ul>
+                        <li>Researched ML, Deep Learning, NLP, and Big Data topics; trained LLM models for automated reply generation.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <h5>Project Manager</h5>
+                    <div class="company">iSharify Ltd.</div>
+                    <span class="period"><i class="far fa-calendar-alt me-1"></i>Jan 2022 – July 2024</span>
+                    <ul>
+                        <li>Managed data management, product analysis, e-commerce, and customer service projects.</li>
+                        <li>Developed two deep learning models for customer service and one ML model for project management.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <h5>Artificial Intelligence Instructor</h5>
+                    <div class="company">Microland IT Solutions Ltd.</div>
+                    <span class="period"><i class="far fa-calendar-alt me-1"></i>July 2022 – December 2022</span>
+                    <ul>
+                        <li>Prepared AI classes, worked on AI projects, and taught cutting-edge AI technologies.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <h5>Research Assistant</h5>
+                    <div class="company">Daffodil International University</div>
+                    <span class="period"><i class="far fa-calendar-alt me-1"></i>Dec 2020 – Nov 2021</span>
+                    <ul>
+                        <li>Prepared AI research classes, worked on AI projects, and authored research reports.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <h5>Researcher</h5>
+                    <div class="company">DIU ML & NLP Lab</div>
+                    <span class="period"><i class="far fa-calendar-alt me-1"></i>Dec 2019 – Nov 2022</span>
+                    <ul>
+                        <li>Researched AI technologies and worked on NLP, ML, and Data Science projects including Bangla language datasets.</li>
+                        <li>Attended and presented at international conferences; published research papers.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Other Experience -->
+        <h4 style="color: var(--heading); font-weight: 600; margin: 40px 0 20px; font-size: 1.3rem;">
+            Other <span style="color: var(--accent);">Ventures & Experience</span>
+        </h4>
+        <div class="row g-3">
+            <div class="col-md-6">
+                <div class="timeline-card">
+                    <h5>Founder — IT Crowed</h5>
+                    <span class="period"><i class="far fa-calendar-alt me-1"></i>2019 – 2022</span>
+                    <ul>
+                        <li>Trained and guided 50+ people to earn through online freelancing and digital work.</li>
+                        <li>Managed graphics design, data entry, ML projects, and built a digital earning platform.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="timeline-card">
+                    <h5>Founder — Get_project</h5>
+                    <span class="period"><i class="far fa-calendar-alt me-1"></i>2022 – Present</span>
+                    <ul>
+                        <li>Working on AI, NLP, ML, and Data Science projects with research publication guidance.</li>
+                        <li>Managing web development, AI projects, and customer service teams.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="timeline-card">
+                    <h5>Football Captain — FC LCBD</h5>
+                    <span class="period"><i class="far fa-calendar-alt me-1"></i>2013 – Present</span>
+                    <ul>
+                        <li>Organized major football tournaments in Dhaka (2016, 2018, 2023, 2024).</li>
+                        <li>Played at school, college, professional, and corporate levels.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="timeline-card">
+                    <h5>Teacher — Borno Coaching Center</h5>
+                    <span class="period"><i class="far fa-calendar-alt me-1"></i>Dec 2016 – May 2019</span>
+                    <ul>
+                        <li>Taught classes, prepared lessons, conducted exams, and created study notes.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section id="projects">
+    <div class="container">
+        <h2 class="section-title">Featured <span>Projects</span></h2>
+        <div class="section-divider"></div>
+        <div class="row g-4">
+
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card">
+                    <img src="box.png" alt="Box Detection" class="proj-img">
+                    <div class="card-body">
+                        <h6>Box Detection using Computer Vision</h6>
+                        <p>OpenCV and deep learning with RANSAC algorithm for precise real-time box detection.</p>
+                        <a href="https://github.com/Abir0810/Box_Detection_RANSAC-algorithm" target="_blank" class="proj-link"><i class="fab fa-github me-1"></i>View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card">
+                    <img src="cy.png" alt="Cyber Attack" class="proj-img">
+                    <div class="card-body">
+                        <h6>Cyber Attack Prediction using ML</h6>
+                        <p>Analyzes past attack patterns using J48, KNN, REPTree, and Random Forest to forecast upcoming threats.</p>
+                        <a href="https://github.com/Abir0810/Upcoming_cyber_attack_prediction_using_machine_learning" target="_blank" class="proj-link"><i class="fab fa-github me-1"></i>View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card">
+                    <img src="sign.jpg" alt="Sign Language" class="proj-img">
+                    <div class="card-body">
+                        <h6>Sign Language Prediction (Deep Learning)</h6>
+                        <p>CNN-based model with pretrained architectures to accurately recognize and predict sign language gestures.</p>
+                        <a href="https://github.com/Abir0810/Sign_language_prediction_using_deep_learning_model" target="_blank" class="proj-link"><i class="fab fa-github me-1"></i>View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card">
+                    <img src="Apple.jpg" alt="Apple Disease" class="proj-img">
+                    <div class="card-body">
+                        <h6>Apple Plant Disease Detection</h6>
+                        <p>CNN and Sequential model for multi-class classification of apple plant diseases from image data.</p>
+                        <a href="https://github.com/Abir0810/apple_trees_plant_dieases_prediction_using_Sequential_model_and_cnn" target="_blank" class="proj-link"><i class="fab fa-github me-1"></i>View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card">
+                    <img src="Chatbot.png" alt="Chatbot" class="proj-img">
+                    <div class="card-body">
+                        <h6>Chatbot System using NLP</h6>
+                        <p>Trainable AI chatbot that learns from custom datasets and responds intelligently to user queries.</p>
+                        <a href="https://github.com/Abir0810/Chatbot_using_NLP" target="_blank" class="proj-link"><i class="fab fa-github me-1"></i>View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card">
+                    <img src="attendence.png" alt="Face Recognition" class="proj-img">
+                    <div class="card-body">
+                        <h6>Face Recognition Attendance System</h6>
+                        <p>Automated attendance management using deep learning face recognition — updates files automatically.</p>
+                        <a href="https://github.com/Abir0810/attendance_system_computer_vision" target="_blank" class="proj-link"><i class="fab fa-github me-1"></i>View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card">
+                    <img src="mouse.png" alt="Virtual Mouse" class="proj-img">
+                    <div class="card-body">
+                        <h6>Virtual Mouse using AI</h6>
+                        <p>Control your computer mouse using hand gestures captured by camera — fully AI-powered.</p>
+                        <a href="https://github.com/Abir0810/virtual_mouse_using_AI" target="_blank" class="proj-link"><i class="fab fa-github me-1"></i>View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card">
+                    <img src="Human.png" alt="Human Interaction" class="proj-img">
+                    <div class="card-body">
+                        <h6>Human Interaction from Video Data</h6>
+                        <p>Identifies and classifies human actions from video data using multi-class ML models.</p>
+                        <a href="https://github.com/Abir0810/human_interaction_using_video_data" target="_blank" class="proj-link"><i class="fab fa-github me-1"></i>View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card">
+                    <img src="brian.jpg" alt="Brain Tumor" class="proj-img">
+                    <div class="card-body">
+                        <h6>Brain Tumor Disease Prediction</h6>
+                        <p>CNN hybrid model for brain tumor detection from 2D medical scan data with preprocessing pipeline.</p>
+                        <a href="https://github.com/Abir0810/brain-tumor-disease-prediction" target="_blank" class="proj-link"><i class="fab fa-github me-1"></i>View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card">
+                    <img src="Toxix.png" alt="Toxic Comment" class="proj-img">
+                    <div class="card-body">
+                        <h6>Bangla Toxic Comment Detection (NLP)</h6>
+                        <p>NLP model trained on 600K+ Bangla comments to classify multiple toxicity levels with visualization.</p>
+                        <a href="https://github.com/Abir0810/toxic_comment_for_bangla_language_NLP" target="_blank" class="proj-link"><i class="fab fa-github me-1"></i>View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card">
+                    <img src="Drug.png" alt="Drug Addiction" class="proj-img">
+                    <div class="card-body">
+                        <h6>Drug Addiction Prediction</h6>
+                        <p>Classification model to analyze and predict drug addiction behavior patterns from behavioral data.</p>
+                        <a href="#" class="proj-link"><i class="fab fa-github me-1"></i>View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card">
+                    <img src="Firn.png" alt="Firm Prediction" class="proj-img">
+                    <div class="card-body">
+                        <h6>Firm Business Prediction</h6>
+                        <p>ML-powered business model visualization and risk management prediction for strategic decision-making.</p>
+                        <a href="https://github.com/Abir0810/firm_business_prediction_model" target="_blank" class="proj-link"><i class="fab fa-github me-1"></i>View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card">
+                    <img src="Accelamotor.png" alt="Accelerometer" class="proj-img">
+                    <div class="card-body">
+                        <h6>Accelerometer Human Action Prediction</h6>
+                        <p>ML classification of human actions using accelerometer sensor data with high accuracy.</p>
+                        <a href="https://github.com/Abir0810/acceleramotor_data_for_human_action" target="_blank" class="proj-link"><i class="fab fa-github me-1"></i>View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card">
+                    <div class="proj-no-img"><i class="fas fa-microphone-alt"></i></div>
+                    <div class="card-body">
+                        <h6>Voice Flow Demo — Voice Assistant</h6>
+                        <p>Automated voice recognition and intelligent AI-powered voice assistant responses.</p>
+                        <a href="https://github.com/Abir0810/Voice_flow_demo" target="_blank" class="proj-link"><i class="fab fa-github me-1"></i>View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card">
+                    <div class="proj-no-img"><i class="fas fa-heartbeat"></i></div>
+                    <div class="card-body">
+                        <h6>Haberman Survival Data Analysis</h6>
+                        <p>Predicts 5-year patient survival based on age, operation year, and positive lymph node count.</p>
+                        <a href="https://github.com/Abir0810/hberman_Survival_Data_Analysis" target="_blank" class="proj-link"><i class="fab fa-github me-1"></i>View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ===== EDUCATION ===== -->
+<section id="education" class="section-alt">
+    <div class="container">
+        <h2 class="section-title">Educa<span>tion</span></h2>
+        <div class="section-divider"></div>
+        <div class="edu-card">
+            <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div>
+                <h5>B.Sc. in Computer Science & Engineering</h5>
+                <p>Daffodil International University &nbsp;&nbsp;|&nbsp;&nbsp; <span class="grade">GPA: 3.03</span> &nbsp;&nbsp;|&nbsp;&nbsp; 2020</p>
+            </div>
+        </div>
+        <div class="edu-card">
+            <div class="edu-icon"><i class="fas fa-school"></i></div>
+            <div>
+                <h5>H.S.C, Science</h5>
+                <p>BAF Shaheen College, Dhaka &nbsp;&nbsp;|&nbsp;&nbsp; <span class="grade">GPA: 4.50</span> &nbsp;&nbsp;|&nbsp;&nbsp; 2015</p>
+            </div>
+        </div>
+        <div class="edu-card">
+            <div class="edu-icon"><i class="fas fa-school"></i></div>
+            <div>
+                <h5>S.S.C, Science</h5>
+                <p>Mirpur Bangla High School And College &nbsp;&nbsp;|&nbsp;&nbsp; <span class="grade">GPA: 4.56</span> &nbsp;&nbsp;|&nbsp;&nbsp; 2013</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== PUBLICATIONS ===== -->
+<section id="publications">
+    <div class="container">
+        <h2 class="section-title">Publi<span>cations</span></h2>
+        <div class="section-divider"></div>
+        <div class="pub-item">
+            <strong style="color: var(--accent);">[1]</strong>&nbsp; Abir Abdullha, AKM Shahriar Azad Rabby, Yeasin Habib, Md. Raisul Islam Masum.
+            <em>"Countries Condition Of Forestation And Trees Percentage Using Machine Learning"</em>, <strong style="color: var(--text);">SMART-2019</strong>.
+        </div>
+        <div class="pub-item">
+            <strong style="color: var(--accent);">[2]</strong>&nbsp; Abir Abdullha, Sheikh Abujhar.
+            <em>"COVID-19: Data Analysis and The Situation Prediction Using Machine Learning Based on Bangladesh Perspective"</em>, <strong style="color: var(--text);">iSAINLP-AIoT-2020</strong>.
+        </div>
+        <div class="pub-item">
+            <strong style="color: var(--accent);">[3]</strong>&nbsp; Abir Abdullha, Abdus Sattar, Md Riad Hasan, Md Forhad Hossain.
+            <em>"Cultivating Tulip at Extent by Using Machine Learning in Context to Bangladesh"</em>, <strong style="color: var(--text);">ICAECT-2022</strong>.
+        </div>
+    </div>
+</section>
+
+<!-- ===== CERTIFICATIONS ===== -->
+<section class="section-alt">
+    <div class="container">
+        <h2 class="section-title">Training & <span>Certifications</span></h2>
+        <div class="section-divider"></div>
+        <div class="row g-3">
+            <div class="col-md-6">
+                <div class="cert-card">
+                    <div class="cert-icon" style="color: var(--accent);"><i class="fas fa-certificate"></i></div>
+                    <div>
+                        <div class="cert-title">Introduction to Data Science in Python</div>
+                        <div class="cert-sub">University of Michigan &nbsp;·&nbsp; August 2020</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="cert-card">
+                    <div class="cert-icon" style="color: var(--accent);"><i class="fas fa-certificate"></i></div>
+                    <div>
+                        <div class="cert-title">Neural Network and Deep Learning</div>
+                        <div class="cert-sub">DeepLearning.AI &nbsp;·&nbsp; May 2020</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="cert-card">
+                    <div class="cert-icon" style="color: var(--accent);"><i class="fas fa-certificate"></i></div>
+                    <div>
+                        <div class="cert-title">Python Project: Pillow, Tesseract & OpenCV</div>
+                        <div class="cert-sub">University of Michigan &nbsp;·&nbsp; March 2021</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="cert-card">
+                    <div class="cert-icon" style="color: #ffd700;"><i class="fas fa-trophy"></i></div>
+                    <div>
+                        <div class="cert-title">Scholarly Publication Recognition</div>
+                        <div class="cert-sub">Recognized for publications in reputed indexed journals &nbsp;·&nbsp; 2020</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="cert-card">
+                    <div class="cert-icon" style="color: #ffd700;"><i class="fas fa-award"></i></div>
+                    <div>
+                        <div class="cert-title">Coronathon-19 Participant</div>
+                        <div class="cert-sub">COVID-19 Hackathon Challenge</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="cert-card">
+                    <div class="cert-icon" style="color: var(--accent2);"><i class="fas fa-robot"></i></div>
+                    <div>
+                        <div class="cert-title">40+ AI Projects Delivered</div>
+                        <div class="cert-sub">Across ML, NLP, Computer Vision & AI Agents</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== GALLERY ===== -->
+<section id="gallery">
+    <div class="container">
+        <h2 class="section-title">Photo <span>Gallery</span></h2>
+        <div class="section-divider"></div>
+        <div class="row g-3">
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="gallery-wrap"><img src="smart.jpg" class="gallery-img" alt="Gallery"></div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="gallery-wrap"><img src="index.jpg" class="gallery-img" alt="Gallery"></div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="gallery-wrap"><img src="indexx.jpg" class="gallery-img" alt="Gallery"></div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="gallery-wrap"><img src="fut3.jpg" class="gallery-img" alt="Gallery"></div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="gallery-wrap"><img src="fut.jpg" class="gallery-img" alt="Gallery"></div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="gallery-wrap"><img src="course.jpeg" class="gallery-img" alt="Gallery"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="section-alt">
+    <div class="container">
+        <h2 class="section-title">Get In <span>Touch</span></h2>
+        <div class="section-divider"></div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="contact-card">
+                    <i class="fas fa-phone"></i>
+                    <h6>Phone</h6>
+                    <a href="tel:+8801682104642">+880 1682-104642</a>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h6>Email</h6>
+                    <a href="mailto:abir.abdullah16@gmail.com">abir.abdullah16<br>@gmail.com</a>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="contact-card">
+                    <i class="fab fa-linkedin"></i>
+                    <h6>LinkedIn</h6>
+                    <a href="https://www.linkedin.com/in/abir-abdullha-720b7118b/" target="_blank">Abir Abdullha</a>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="contact-card">
+                    <i class="fab fa-github"></i>
+                    <h6>GitHub</h6>
+                    <a href="https://github.com/Abir0810" target="_blank">Abir0810</a>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="contact-card">
+                    <i class="fab fa-kaggle"></i>
+                    <h6>Kaggle</h6>
+                    <a href="https://www.kaggle.com/abirabdullah" target="_blank">abirabdullah</a>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="contact-card">
+                    <i class="fab fa-medium"></i>
+                    <h6>Medium</h6>
+                    <a href="https://medium.com/@abir.abdullah16" target="_blank">@abir.abdullah16</a>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="contact-card">
+                    <i class="fas fa-flask"></i>
+                    <h6>ResearchGate</h6>
+                    <a href="https://www.researchgate.net/profile/Abir_Abdullha" target="_blank">Abir Abdullha</a>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="contact-card">
+                    <i class="fas fa-globe"></i>
+                    <h6>Google Sites</h6>
+                    <a href="https://sites.google.com/view/abirabdullah/home" target="_blank">Portfolio</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    <div class="container">
+        <p class="footer-name">Abir Abdullha</p>
+        <p>Assistant Tech Manager &nbsp;·&nbsp; AI/ML Engineer &nbsp;·&nbsp; Researcher</p>
+        <div class="social-links mt-3">
+            <a href="https://www.linkedin.com/in/abir-abdullha-720b7118b/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Abir0810" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.kaggle.com/abirabdullah" target="_blank"><i class="fab fa-kaggle"></i></a>
+            <a href="https://medium.com/@abir.abdullah16" target="_blank"><i class="fab fa-medium"></i></a>
+            <a href="mailto:abir.abdullah16@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p class="mt-3" style="font-size: 0.78rem; color: var(--border);">© 2025 Abir Abdullha. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
